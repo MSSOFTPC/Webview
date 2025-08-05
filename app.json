@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "sidcofood",
+    "name": "Sidco Foods",
     "slug": "sidcofood",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -20,10 +20,24 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.app.sidcofoodsuae"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "44dbae4c-2057-4561-868f-f9b143c49c01"
+      }
     }
   }
 }
